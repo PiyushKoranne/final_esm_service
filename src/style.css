@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+
+:root{
+	--dark-green:#004225;
+	--primary-yellow:#FFB000;
+	--bg-light:#F5F5DC;
+	--bg-pint:#FFCF9D;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montagu Slab Variable', sans-serif;
+}
+
+body {
+	font-family: 'Montagu Slab Variable', sans-serif;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+.stats-number {
+	font-size: 36px;	
+}
+.home-section-left{
+	background-image: url(./assets/liquid-cheese.svg);
+	background-size: cover;
+
+}
+
+
+.common-pink-button{
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	padding: 8px 24px;
+	background-color: var(--bg-pint);
+}
+.common-subtle-button{
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	padding: 8px 24px;
+	background-color: rgba(0,0,0,0.03);
+}
+.sidemenu-item {
+	padding: 10px 45px;
+}
+.sidemenu-item:hover {
+	background-color: rgba(0,0,0,0.03);
+}
+.common-button{
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	border:1px solid var(--dark-green);
+	padding: 8px 24px;
+}
+.common-button-lg{
+	padding: 15px 60px;
+}
+.common-button::before{
+	content:"";
+	z-index: -1;
+	inset: 0;
+	position: absolute;
+	scale: 0 1;
+	transition: scale 500ms;
+	transform-origin: right;
+}
+.common-button-green::before {
+	background-color: var(--dark-green);
+}
+.common-button-yellow::before {
+	background-color: var(--primary-yellow);
+}
+.common-button-pink::before {
+	background-color: var(--bg-pint);
+}
+.common-button-green:hover{
+	color: var(--primary-yellow);
+}
+.common-button-yellow:hover{
+	color: var(--dark-green);
+}
+.common-button:hover:before{
+	scale: 1 1;
+	transform-origin: left;
+}
+ :where(.css-dev-only-do-not-override-18iikkb).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background-color: #FFB000;
+    border-color: #FFB000;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+    background-color: rgba(255,176,0, 0.3);
+
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #4cda7b;
+
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-steps .ant-steps-item-finish .ant-steps-item-icon >.ant-steps-icon {
+    color: #004225;
+}
+
+:where(.css-dev-only-do-not-override-18iikkb).ant-tag {
+    margin-inline-end: 18px;
+
+    font-size: 16px;
+    padding: 7px 20px;
+
+
+}
+
+:where(.css-dev-only-do-not-override-18iikkb).ant-tag:nth-child(1) {
+	margin-left: 160px;
+}
+.popularTags{
+	margin: 50px 0;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-switch{
+	background: rgba(0, 0, 0, 0.45);
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-switch.ant-switch-checked {
+    background: #FFB000;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+    background: #004225;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #004225;
+}
+
+:where(.css-dev-only-do-not-override-18iikkb).ant-input-search .ant-input-search-button {
+    height: 49px;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-input-group .ant-input-group-addon {
+    top: 6.5px;
+}
+.sidemenu-item {
+    padding: 10px 141px 10px 45px ;
+    width: 100%;
+}
+.bold{
+	font-weight: bolder;
+	padding-left: 60px;
+}
+:where(.css-dev-only-do-not-override-18iikkb).ant-form-item .ant-form-item-label >label {
+
+    margin-top: 21px;
+}
+.side-menu-container{
+	overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1677ff;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+	background: #004225;
+} */
+
+.ant-modal-footer > .ant-btn-primary {
+	background-color: #1677ff;
+}
+
+.monaco-editor {
+	padding: 15px 0px;
+}
+.contact-info-form .default-input, .default-input{
+	padding: 5px 15px !important;
+	border:none !important;
+	border-bottom: 2px solid #787878 !important;
+	outline: none !important;
+	width: 30% !important;
+}
+
+.contact-info-form .default-input-lg, .default-input-lg{
+	padding: 8px 24px !important;
+	font-size: 18px !important;
+}
+
+.subtle-bg-img{
+	background-image: url(./assets/pattern-randomized.svg);
+}
